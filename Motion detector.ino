@@ -1,16 +1,19 @@
 void setup()
 {
-  pinMode(11, OUTPUT);
-  pinMode(2,INPUT);
+  pinMode(3, OUTPUT);
+  pinMode(10, INPUT_PULLUP);
+
 }
 
 void loop()
 {
-  if(digitalRead(2) == LOW)
-  {  
-     digitalWrite(11, HIGH);
-     delay(1000); // Wait for 1000 millisecond(s)
-     digitalWrite(11, LOW);
-    
+  digitalWrite(3, LOW);
+
+  if(digitalRead(10) == HIGH)
+  {
+   	digitalWrite(3, HIGH);
+    delay(500);
+    digitalWrite(3, LOW);
   }
+  
 }
