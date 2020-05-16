@@ -3,7 +3,7 @@
 Servo myservo;  // create servo object to control a servo
 
 int angle = 0;    // variable to store the servo position
-int analogval; 
+int val; 
 void setup() 
 {
   myservo.attach(9);  // attaches the servo on pin 9 to the servo object
